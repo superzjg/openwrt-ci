@@ -30,13 +30,13 @@ function git_sparse_clone() {
 }
 
 # 添加额外插件
-git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
+# git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 git clone --depth=1 -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush package/luci-app-serverchan
-git clone --depth=1 https://github.com/ilxp/luci-app-ikoolproxy package/luci-app-ikoolproxy
+# git clone --depth=1 https://github.com/ilxp/luci-app-ikoolproxy package/luci-app-ikoolproxy
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
-git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
+# git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
+# git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
 # git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
 
@@ -48,14 +48,14 @@ git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/
 #git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
 # Themes
-git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
-git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
-git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial luci-theme-opentomcat luci-theme-netgear
+# git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+# git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+# git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+# git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
+# git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial luci-theme-opentomcat luci-theme-netgear
 
 # 更改 Argon 主题背景
-cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
+# cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 # 晶晨宝盒
 git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
@@ -68,14 +68,14 @@ git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/
 git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 # msd_lite
-git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
-git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
+git clone --depth=1 https://github.com/superzjg/luci-app-msd_lite package/luci-app-msd_lite
+git clone --depth=1 https://github.com/superzjg/luci-app-msd_lite package/msd_lite
 
 # MosDNS
 git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 
 # Alist
-git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
+# git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
 # DDNS.to
 git_sparse_clone main https://github.com/linkease/nas-packages-luci luci/luci-app-ddnsto
